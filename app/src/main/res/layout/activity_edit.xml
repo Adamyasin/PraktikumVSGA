@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditActivity"
+    android:padding="16dp"
+    android:background="@color/oren">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Data"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        />
+
+    <!-- EditText untuk nomor -->
+    <EditText
+        android:id="@+id/editTextNomor"
+        android:layout_below="@id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor"
+        android:drawableLeft="@drawable/pencil"
+        android:inputType="number"/>
+
+    <!-- EditText untuk nama -->
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/editTextNomor"
+        android:drawableLeft="@drawable/group"
+        android:hint="Nama"/>
+
+    <!-- EditText untuk tanggal lahir -->
+    <EditText
+        android:id="@+id/editTextTanggalLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="12dp"
+        android:layout_below="@id/editTextNama"
+        android:hint="Tanggal Lahir : dd-mm-yyyy"
+        android:inputType="none"
+        android:drawableLeft="@drawable/cal"
+        android:layout_marginTop="6dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+
+    <!-- EditText untuk jenis kelamin -->
+    <EditText
+        android:id="@+id/editTextJenisKelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/editTextTanggalLahir"
+        android:drawableLeft="@drawable/person"
+        android:hint="Jenis Kelamin"/>
+
+    <!-- EditText untuk alamat -->
+    <EditText
+        android:id="@+id/editTextAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/editTextJenisKelamin"
+        android:drawableLeft="@drawable/loc"
+        android:hint="Alamat"/>
+
+    <!-- Tombol simpan di pojok kanan bawah -->
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Simpan"
+        android:backgroundTint="@color/semired"/>
+
+</RelativeLayout>

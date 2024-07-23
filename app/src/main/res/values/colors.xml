@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkblue">#E900111E</color>
+    <color name="grey">#706969</color>
+    <color name="blue">#053DCA</color>
+    <color name="kunyit">#FF8C00</color>
+    <color name="oren">#FFC107</color>
+    <color name="red">#F42C1D</color>
+    <color name="semired">#FF1744</color>
+    <color name="tinblue">#03A9F4</color>
+</resources>

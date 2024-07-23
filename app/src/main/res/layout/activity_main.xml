@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/oren">
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewCircle"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_below="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialComponents.Circle"
+        app:srcCompat="@drawable/bingung"
+        app:strokeColor="@color/darkblue"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:layout_below="@+id/imageViewCircle"
+        android:id="@+id/btnlihat"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Lihat Data"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/red" />
+
+    <Button
+        android:layout_below="@+id/btnlihat"
+        android:id="@+id/btninput"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Input Data"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/tinblue"/>
+
+    <Button
+        android:layout_below="@+id/btninput"
+        android:id="@+id/btninfo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Informasi"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/group"
+        android:backgroundTint="@color/kunyit"/>
+
+
+</RelativeLayout>
